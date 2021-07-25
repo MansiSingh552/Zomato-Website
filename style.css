@@ -1,0 +1,471 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+  background-color: #edf2ff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow:  0px 10px 25px -20px #2e415c ;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.navbar__logo {
+   width: 100px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hero__button {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #dd2476 50% ,#ff512f 100% );
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    transition-duration: 0.5s;
+}
+
+.hero__button:hover {
+    background-image: linear-gradient(to left , #dd2476 50% ,#ff512f 100%);
+    cursor: pointer;
+}
+
+.hero__container{
+
+    margin-top:20px;
+}
+.hero__image__container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero__image__shape {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+    margin-top: -30px;
+    width: 100%;
+}
+
+.hero__image__shape__dot {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    margin-top: -30px;
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 20px 25px -20px #1D3557;
+}
+
+.hero__text {
+    color:#1D3557;
+    font-size: 35px;
+    font-weight:bolder;
+    margin-top:20px;
+}
+.card__list__heading {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1D3557;
+    text-align: center;
+}
+.card__list__burger {
+    margin-top: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.card__list__burger__image {
+    width: 100%;
+}
+
+.card__list__burger__image img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card__list__burger__text {
+    padding: 30px 0px 30px 5px;
+    font-size: 14px;
+}
+
+.card__list__view__more {
+    background-image: linear-gradient(to right, #dd2476 50% ,#ff512f 100%);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 20px 40px;
+}
+
+.more__restaurant__content {
+    display: none;
+}
+
+
+.email__division {
+    width: 100%;
+    margin: 60px 0px 40px 0px;
+}
+
+.email__stay__updated {
+    color: #1D3557;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.email__info__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email__info__input {
+    width: 200px;
+}
+
+.email__info__input input {
+    border: 1px solid #ff512f;
+    padding: 5px 0px;
+    width: 100%;
+    margin-right: 14px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.saying__image__container {
+    width: 100%;
+    height: 240px;
+    background-image: url(assets/restaurant.jpg);
+    background-size: contain;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.saying__image__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right , rgba(27, 24, 24, 0.5), rgba(27, 24, 24, 0.5) );
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.saying__image__text {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zomato__footer {
+    padding-top: 40px;
+}
+
+
+.footer__main {
+    border-radius: 8px 8px 0px 0px;
+    background-image: linear-gradient(to right , #ff512f 0% , #dd2476 50% ,#ff512f 100% );
+}
+
+.footer__main__image {
+    margin: 0;
+    width: 100%;
+}
+
+.footer__main__image img {
+    width: 100%;
+    filter: brightness(0) invert(1)
+}
+
+
+
+.footer__main__list ul li {
+    color: #fff;
+    padding-bottom: 8px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+
+
+@media (min-width:768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .hero__button {
+        font-size: 18px;
+      }
+
+    .hero {
+        display: flex;
+        align-items:center;
+        flex-direction: row-reverse;
+        margin-top: 0px;
+    }
+
+    .hero__image__container {
+        padding: 40px;
+    }
+
+    .hero__image {
+        width: 110%
+    }
+
+    
+    .hero__text {
+        font-weight: bolder;
+    }
+    
+    .card__list{
+        padding: 0px 10px 40px 10px;
+        position: relative;
+    }
+
+    .card__list__container {
+        display: flex;
+        gap: 5px;
+        margin-top: 60px;
+        padding-bottom: 20px;
+        
+    }
+
+    .card__list__bg {
+        background-image: linear-gradient(to right ,#ff512f , #dd2476 );
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -3;
+        width: 100%;
+        height: 100%;
+        transform: skewY(-5deg);      
+    }
+
+    .card__list__view__more {
+        font-size: 18px;
+        background: none;
+        text-align: center;
+        margin:2rem 0;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        padding: 1rem;
+    }
+
+    
+
+    .card__list__view__more:hover {
+        background: #fff;
+        color: #dd2476 ;
+        margin: 2rem 20rem;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+        cursor: pointer;
+    }
+
+    .pizza__container {
+        margin: -20px 0px 20px 0px;
+    }
+
+    .email__division {
+        max-width: 50%;
+        margin: 80px auto;
+    }
+
+    .saying__image__bg {
+        background-position: center;
+        justify-content: center;
+    }
+
+    .saying__image__text p {
+        font-size: 25px;
+    }
+
+    .footer__main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__main__image {
+        max-width: 60%;
+    }
+
+    .footer__main__image image{
+        width: 100%;
+    }
+
+    .footer__main__list ul li {
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .navbar__brand {
+      width: 150px;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 0px auto;
+    }
+
+    .hero__button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    .hero__image__container {
+        padding: 0px;
+    }
+
+    .hero__image {
+        width: 90%;
+    }
+
+    .hero__text {
+        font-size: 55px;
+        line-height: 52px;
+    }
+
+    .hero__image__shape {   
+        width: 90%;
+    }
+    
+    .hero__image__shape__dot {
+        
+        width: 90%;
+    }
+
+    .card__list__heading h1{
+        font-size: 48px
+    }
+    
+    .card__list__burger {
+        box-shadow: 0px 20px 25px -20px #1D3557
+    }
+    .card__list__container {
+        gap: 40px;
+        margin-top: 80px;
+        padding-bottom: 20px;
+
+    }
+
+    .more__restaurant__content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 90px 0px ;
+    }
+    
+    .more__restaurant__heading {
+        display: flex;
+        align-items: center;
+    }
+    
+    .more__restaurant__heading h1{
+       color: #1D3557;
+       font-size: 55px;
+       line-height: 52px;
+    }
+    
+    .more__restaurants__image {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .more__restaurants__image__1 {
+        height: 300px;
+        width: 200px;
+        background-image: url(assets/restaurant1.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+    
+    .more__restaurants__image__2 {
+        height: 400px;
+        width: 280px;
+        background-image: url(assets/restaurant3.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+    
+    .more__restaurants__image__3 {
+        height: 200px;
+        width: 150px;
+        background-image: url(assets/restaurant4.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .saying__image__text{
+        padding: 0px 30px;
+        font-size: 45px;
+    }
+
+    .email__stay__updated {
+        font-size: 48px;
+    }
+    
+    .email__info__main {
+        justify-content: flex-start;
+    }
+    
+    .email__info__input {
+        width: 280px;
+        padding-right: 14px;
+    }
+    
+    .email__info__input input {
+        border: 1px solid #ff512f;
+        padding: 2px 0px;
+        font-size: 18px;
+        background-color: antiquewhite;
+    }
+    
+
+    .footer__main {
+        padding: 0px 240px 0px 240px ;
+    }
+
+    .footer__main__image {
+        width: 100%;
+    }
+    .footer__main__image img {
+        max-width: 60%;
+    }
+       
+ }
+  
